@@ -1,1 +1,114 @@
-Placeholder
+  
+  
+                                      [1XNoCK[101X
+  
+  
+             [1XComputing obstruction for compact Clifford-Klein form[101X
+  
+  
+                                  Version 1.0
+  
+  
+                                   March 2018
+  
+  
+                                Maciej Bocheński
+  
+                               Piotr Jastrzębski
+  
+                               Anna Szczepkowska
+  
+                                 Aleksy Tralle
+  
+                                  Artur Woike
+  
+  
+  
+  Maciej Bocheński
+      Email:    [7Xmailto:mabo@matman.uwm.edu.pl[107X
+      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
+                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
+                [33X[0;14YSloneczna 54 Street,[133X
+                [33X[0;14Y10-710 Olsztyn, Poland[133X
+  
+  
+  Piotr Jastrzębski
+      Email:    [7Xmailto:piojas@matman.uwm.edu.pl[107X
+      Homepage: [7Xhttp://wmii.uwm.edu.pl/~piojas/[107X
+      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
+                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
+                [33X[0;14YSloneczna 54 Street,[133X
+                [33X[0;14Y10-710 Olsztyn, Poland[133X
+  
+  
+  Anna Szczepkowska
+      Email:    [7Xmailto:anna.szczepkowska@matman.uwm.edu.pl[107X
+      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
+                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
+                [33X[0;14YSloneczna 54 Street,[133X
+                [33X[0;14Y10-710 Olsztyn, Poland[133X
+  
+  
+  Aleksy Tralle
+      Email:    [7Xmailto:tralle@matman.uwm.edu.pl[107X
+      Homepage: [7Xhttp://wmii.uwm.edu.pl/~tralle/[107X
+      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
+                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
+                [33X[0;14YSloneczna 54 Street,[133X
+                [33X[0;14Y10-710 Olsztyn, Poland[133X
+  
+  
+  Artur Woike
+      Email:    [7Xmailto:awoike@matman.uwm.edu.pl[107X
+      Homepage: [7Xhttp://wmii.uwm.edu.pl/~awoike/[107X
+      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
+                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
+                [33X[0;14YSloneczna 54 Street,[133X
+                [33X[0;14Y10-710 Olsztyn, Poland[133X
+  
+  
+  
+  -------------------------------------------------------
+  [1XAbstract[101X
+  [33X[0;0YLorem  ipsum  dolor  sit  amet, consectetur adipiscing elit. Integer lacinia
+  magna  risus,  convallis  tempus  purus  efficitur at. Curabitur diam lacus,
+  posuere  in  dui  eget,  lobortis tempor arcu. Donec lectus quam, egestas in
+  massa  id,  scelerisque  mollis  turpis. Maecenas non mi placerat, venenatis
+  justo  et,  tincidunt  enim.  Etiam  porttitor maximus diam, non semper eros
+  ornare  vel.  Integer  consequat,  nibh ac sollicitudin maximus, nisi turpis
+  gravida  diam,  sed semper purus sem tincidunt dolor. Proin id justo ornare,
+  tempor  arcu  nec,  iaculis  ipsum. Maecenas in felis ut libero sollicitudin
+  sodales  vestibulum  a  arcu.  Integer blandit imperdiet nunc, eget volutpat
+  libero mattis eget. Suspendisse.[133X
+  
+  
+  -------------------------------------------------------
+  [1XCopyright[101X
+  [33X[0;0YLorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit.  Integer  ac
+  elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.[133X
+  
+  
+  -------------------------------------------------------
+  [1XAcknowledgements[101X
+  [33X[0;0YLorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit.  Integer  ac
+  elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.[133X
+  
+  
+  -------------------------------------------------------
+  
+  
+  [1XContents (NoCK)[101X
+  
+  1 [33X[0;0YIntroduction[133X
+    1.1 [33X[0;0YThe simple real Lie algebras[133X
+  2 [33X[0;0Yobstruction[133X
+    2.1 [33X[0;0YTheorems etc[133X
+  3 [33X[0;0Yfunc[133X
+    3.1 [33X[0;0Ydsfds[133X
+      3.1-1 NonCompactDimension
+      3.1-2 PCoefficients
+      3.1-3 PCalculate
+      3.1-4 AllZeroDH
+  
+  
+  [32X
