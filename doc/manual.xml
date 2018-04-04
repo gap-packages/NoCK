@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Book SYSTEM "gapdoc.dtd"
+[<!ENTITY NoCK "<Package>NoCK</Package>">] >
+
+<Book Name="NoCK">
+
+<TitlePage>
+  <Title>NoCK</Title>
+  <Subtitle>Computing obstruction for compact Clifford-Klein form</Subtitle>
+  <Version>Version 1.0</Version>
+
+<Author>
+  Maciej Bocheński
+  <Email>mabo@matman.uwm.edu.pl</Email>
+<Address>
+ Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
+ Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
+       </Address> 
+  </Author>
+<Author>
+  Piotr Jastrzębski
+  <Email>piojas@matman.uwm.edu.pl</Email>
+  <Homepage>http://wmii.uwm.edu.pl/~piojas/</Homepage>
+<Address>
+ Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
+ Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
+       </Address> 
+  </Author>
+  <Author>
+  Anna Szczepkowska
+  <Email>anna.szczepkowska@matman.uwm.edu.pl</Email>
+<Address>
+ Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
+ Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
+       </Address> 
+  </Author>
+  <Author>
+  Aleksy Tralle
+  <Email>tralle@matman.uwm.edu.pl</Email>
+  <Homepage>http://wmii.uwm.edu.pl/~tralle/</Homepage>
+<Address>
+ Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
+ Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
+       </Address> 
+  </Author>
+  <Author>
+  Artur Woike
+  <Email>awoike@matman.uwm.edu.pl</Email>
+  <Homepage>http://wmii.uwm.edu.pl/~awoike/</Homepage>
+<Address>
+ Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
+ Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
+       </Address> 
+  </Author>
+
+  <Date>April 2018
+</Date>
+
+
+
+<Abstract>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse.
+</Abstract>
+
+<Acknowledgements>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.
+</Acknowledgements>
+
+<Copyright>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.
+</Copyright>
+  
+
+</TitlePage>
+
+<TableOfContents/>
+
+<Body>
+
+
+<Chapter> <Heading>Introduction</Heading>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+
+
+<Section Label="secl"> <Heading>The simple real Lie algebras</Heading>
+
+Coś wpisać jak używamy pakiet CORELG i SLA.
+
+<Example>
+gap> L:=RealFormById("E",8,2);
+&lt;Lie algebra of dimension 248 over SqrtField>
+gap> allCSA := CartanSubalgebrasOfRealForm(L);;time;
+67224
+gap> L:=RealFormById("E",8,2,CF(4));
+&lt;Lie algebra of dimension 248 over GaussianRationals>
+gap> allCSA := CartanSubalgebrasOfRealForm(L);;time;
+7301
+# We remark that both computations are exactly the same; 
+# the difference in timing is caused by the fact that 
+# arithmetic over SqrtField is slower.
+</Example>
+
+</Section>
+
+
+</Chapter>
+
+
+<Chapter> <Heading>obstruction</Heading>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+
+
+<Section> <Heading>Theorems etc</Heading>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+
+
+</Section>
+</Chapter>
+<Chapter> <Heading>func</Heading>
+<Section> <Heading>dsfds</Heading>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+<ManSection>
+<Func Name="NonCompactDimension"  Arg="L"
+      Comm="real forms"/>
+<Description>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+<Example>
+gap> RealFormsInformation( "A", 4 );
+</Example>
+</Description>
+</ManSection><ManSection>
+<Func Name="PCoefficients"  Arg="type, rank"/>
+<Description>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+<Example>
+gap> RealFormsInformation( "A", 4 );
+</Example>
+</Description>
+</ManSection><ManSection>
+<Func Name="PCalculate"  Arg="pi, qi"/>
+<Description>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+<Example>
+gap> RealFormsInformation( "A", 4 );
+</Example>
+</Description>
+</ManSection><ManSection>
+<Func Name="AllZeroDH"  Arg="type, rank, id"/>
+<Description>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+
+<Example>
+gap> RealFormsInformation( "A", 4 );
+</Example>
+</Description>
+</ManSection>
+</Section>
+</Chapter>
+
+</Body>
+
+<Bibliography Databases="nock" />
+
+<TheIndex/>
+
+
+</Book>
