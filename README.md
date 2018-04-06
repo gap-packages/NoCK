@@ -17,7 +17,7 @@ to load the package. You will see the package banner.
 
 For details on how to use the NoCK package see the package documentation in the doc subdirectory (view its HTML version or manual.pdf via a PDF viewer). You will find additional information on how to create a GAP package in the Appendix of the manual.
 
-#Documentation
+# Documentation
 
 The manual of NoCK is contained in /pkg/NoCK-XX/doc. An online version can be found [here](https://pjastr.github.io/NoCK/doc/chap0.html).
 

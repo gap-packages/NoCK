@@ -6,7 +6,7 @@
              [1XComputing obstruction for compact Clifford-Klein form[101X
   
   
-                                  Version 0.5
+                                  Version 0.6
   
   
                                    April 2018
