@@ -7,7 +7,7 @@
 <TitlePage>
   <Title>NoCK</Title>
   <Subtitle>Computing obstruction for compact Clifford-Klein form</Subtitle>
-  <Version>Version 1.0</Version>
+  <Version>Version 0.5</Version>
 
 <Author>
   Maciej Bocheński
@@ -56,18 +56,19 @@
   <Date>April 2018
 </Date>
 
-
-
 <Abstract>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse.
+In this package we develop functions for algorithms of finding homogeneous spaces of semisimple non-compact Lie groups which do not admit compact Clifford-Klein forms. 
 </Abstract>
 
 <Acknowledgements>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.
+We thank Willem de Graaf for his help in getting some literature sources.
 </Acknowledgements>
 
 <Copyright>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac elementum purus. Donec luctus nibh ut neque fermentum iaculis. Duis.
+NoCK Package is free software;  you can redistribute it and/or modify it under the terms of the 
+    <URL Text="GNU General Public License">http://www.fsf.org/licenses/gpl.html</URL> 
+    as published by the Free Software Foundation; either version 2 of the License, 
+    or (at your option) any later version.
 </Copyright>
   
 
@@ -78,50 +79,43 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac elementum pu
 <Body>
 
 
-<Chapter> <Heading>Introduction</Heading>
+<Chapter> <Heading>Introduction and notation</Heading>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+Notation for real Lie algebra is from [CoReLG] Package.
 
-
-
-<Section Label="secl"> <Heading>The simple real Lie algebras</Heading>
-
-Coś wpisać jak używamy pakiet CORELG i SLA.
+Notice: We found some misspelling:
+<List>
+ <Item>"D",4,5 is <M>\mathfrak{so}(1,7)</M></Item>
+ <Item>"D",4,4 is <M>\mathfrak{so}(3,5)</M></Item>
+ <Item>"E",7,3 is <M>\mathfrak{e}_{7(-25)}=EVII</M></Item>
+ <Item>"E",7,4 is <M>\mathfrak{e}_{7(-5)}=EVI</M></Item>
+</List>
+To be sure, check rank or dimension and check result with table in [onvin].
 
 <Example>
-gap> L:=RealFormById("E",8,2);
-&lt;Lie algebra of dimension 248 over SqrtField>
-gap> allCSA := CartanSubalgebrasOfRealForm(L);;time;
-67224
-gap> L:=RealFormById("E",8,2,CF(4));
-&lt;Lie algebra of dimension 248 over GaussianRationals>
-gap> allCSA := CartanSubalgebrasOfRealForm(L);;time;
-7301
-# We remark that both computations are exactly the same; 
-# the difference in timing is caused by the fact that 
-# arithmetic over SqrtField is slower.
+gap> G:=RealFormById( "E", 7,3);
+&lt;Lie algebra of dimension 133 over SqrtField>
+gap> rankG:=Dimension(CartanSubalgebra(G));
+7
+gap> rankRG:=Dimension(CartanSubspace(G));
+3
+gap> dimG:=Dimension(G);
+133
+gap> P:=CartanDecomposition( G ).P;
+&lt;vector space over SqrtField, with 54 generators>
+gap> dimPforG:=Dimension(P);
+54
+gap> K:=CartanDecomposition( G ).K;
+&lt;Lie algebra of dimension 79 over SqrtField>
+gap> rankK:= Dimension(CartanSubalgebra(K));
+7
+gap> dimK:= Dimension(K);
+79
 </Example>
 
-</Section>
-
 
 </Chapter>
 
-
-<Chapter> <Heading>obstruction</Heading>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
-
-
-
-<Section> <Heading>Theorems etc</Heading>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
-
-
-
-</Section>
-</Chapter>
 <Chapter> <Heading>func</Heading>
 <Section> <Heading>dsfds</Heading>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
@@ -156,7 +150,7 @@ gap> RealFormsInformation( "A", 4 );
 </ManSection><ManSection>
 <Func Name="AllZeroDH"  Arg="type, rank, id"/>
 <Description>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
 
 <Example>
 gap> RealFormsInformation( "A", 4 );
@@ -168,7 +162,7 @@ gap> RealFormsInformation( "A", 4 );
 
 </Body>
 
-<Bibliography Databases="nock" />
+<Bibliography Databases="NoCK" />
 
 <TheIndex/>
 
