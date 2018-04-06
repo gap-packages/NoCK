@@ -1,5 +1,5 @@
 name: NoCK
-version: 0.6
+version: 0.7
 date: 2018-04-06
 description: |
     NoCK-Package for computitation obstruction for compact Clifford-Klein forms.
@@ -41,13 +41,13 @@ suggested-pkgs:
       version: "1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
 
-www: https://pjastr.github.io/NoCKnock
+www: https://pjastr.github.io/NoCK
 readme: README.md
-packageinfo: https://pjastr.github.io/NoCKnock/PackageInfo.g
+packageinfo: https://pjastr.github.io/NoCK/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/pjastr/NoCK/archive/v0.6.tar.gz
+      url: https://github.com/pjastr/NoCK/archive/v0.7.tar.gz
 
 abstract: |
     The <span class="pkgname">NoCK</span> package    is used for computitation Tolzanos's obstruction    for compact Clifford-Klein forms
