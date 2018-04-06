@@ -1,3 +1,27 @@
-\begin{thebibliography}{}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{DFdG14}
+
+\bibitem[BJS{\etalchar{+}}]{our}
+M.~Boche{\a'n}ski, P.~Jastrz{\k e}bski, A.~Szczepkowska, A.~Tralle, and
+  A.~Woike.
+\newblock Semisimple subalgebras in simple lie algebras and a computational
+  approach to the compact clifford-klein forms problem.
+\newblock in preparation.
+
+\bibitem[DFdG14]{CoReLG}
+H.~Dietrich, P.~Faccin, and W.~A. de~Graaf.
+\newblock Corelg, computation with real lie groups, version 1.20.
+\newblock \href {http://users.monash.edu/~heikod/corelg/}
+  {\texttt{http://users.monash.edu/}\discretionary
+  {}{}{}\texttt{\texttt{\symbol{126}}heikod/}\discretionary
+  {}{}{}\texttt{corelg/}}, Dec 2014.
+\newblock Refereed GAP package.
+
+\bibitem[OV90]{onvin}
+A.~Onishchik and E.~Vinberg.
+\newblock {\em Lie Groups and Algebraic Groups}.
+\newblock Springer Series in Soviet Mathematics. Springer-Verlag Berlin
+  Heidelberg, first edition, 1990.
+\newblock Original Russian edition published by Nauka, Moscow 1988.
 
 \end{thebibliography}

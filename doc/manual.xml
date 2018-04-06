@@ -79,9 +79,9 @@ NoCK Package is free software;  you can redistribute it and/or modify it under t
 <Body>
 
 
-<Chapter> <Heading>Introduction and notation</Heading>
+<Chapter> <Heading>Notation</Heading>
 
-Notation for real Lie algebra is from [CoReLG] Package.
+Notation for real Lie algebra is from <Cite Key="CoReLG" /> Package.
 
 Notice: We found some misspelling:
 <List>
@@ -90,7 +90,7 @@ Notice: We found some misspelling:
  <Item>"E",7,3 is <M>\mathfrak{e}_{7(-25)}=EVII</M></Item>
  <Item>"E",7,4 is <M>\mathfrak{e}_{7(-5)}=EVI</M></Item>
 </List>
-To be sure, check rank or dimension and check result with table in [onvin].
+To be sure, check rank or dimension and check result with table in <Cite Key="onvin" />.
 
 <Example>
 gap> G:=RealFormById( "E", 7,3);
@@ -116,44 +116,55 @@ gap> dimK:= Dimension(K);
 
 </Chapter>
 
-<Chapter> <Heading>func</Heading>
-<Section> <Heading>dsfds</Heading>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+<Chapter> <Heading>Obstruction for compact Clifford-Klein form</Heading>
+
+In this chapter we describe functions for algorithms from <Cite Key="our"/>.
+<Section> <Heading>Technical functions</Heading>
 <ManSection>
-<Func Name="NonCompactDimension"  Arg="L"
+<Func Name="NonCompactDimension"  Arg="G"
       Comm="real forms"/>
 <Description>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
+For a real Lie algebra <M>G</M> constructed by the function <A>RealFormById</A> (from <Cite Key="CoReLG"/>), this function returns non-compact dimension of <M>G</M>.
 
 <Example>
-gap> RealFormsInformation( "A", 4 );
+gap> G:=RealFormById("E",6,2); # E6(6)
+&lt;Lie algebra of dimension 78 over SqrtField>
+gap> dG:=NonCompactDimension(G);
+42
 </Example>
 </Description>
 </ManSection><ManSection>
 <Func Name="PCoefficients"  Arg="type, rank"/>
 <Description>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
-
+Let <M>G</M> be the compact connecte Lie group of type <A>type</A> and rank <A>rank</A>.  Let
+<M>\Lambda\,P_{G}=\Lambda (y_1,...,y_l)</M>
+be the exterior algebras over the spaces <M>P_G</M> of the primitive elements in <M>H^*(G)</M>. Denote the degrees as follows
+<M>|y_j|=2p_j-1,j=1,...,l</M>. This function returns coefficients <M>p_1,\ldots,p_l, j=1,...,l</M>.
 <Example>
-gap> RealFormsInformation( "A", 4 );
+gap> PCoefficients("D",5);
+[ 2, 4, 6, 8, 5 ]
 </Example>
 </Description>
 </ManSection><ManSection>
 <Func Name="PCalculate"  Arg="pi, qi"/>
 <Description>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
-
+Here <M>pi=\{ p_1,\ldots,p_l\}</M> and <M>qi=\{ q_1,\ldots,q_m\}</M> are sets of coefficients (<M>l\geq m</M>). This function 
+returns polynomial: 
+<M>P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})</M>.
 <Example>
-gap> RealFormsInformation( "A", 4 );
+gap> PCalculate([4,2,3],[2,2]);   
+t^9+t^5+t^4+1
 </Example>
 </Description>
 </ManSection><ManSection>
 <Func Name="AllZeroDH"  Arg="type, rank, id"/>
 <Description>
-Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse. 
-
+Let <M>G^C</M> be the complex Lie algebra of type <A>type</A> and rank <A>rank</A>. Let <M>G</M> be the real form of <M>G^C</M>
+ with index <A>id</A> (see <A>RealFormsInformation</A>,<Cite Key="CoReLG"/>). This function returns set of degrees of <M>P(t)</M>
+ that have zero coefficients over all permutation (see Section 7 in <Cite Key="our"/>).
 <Example>
-gap> RealFormsInformation( "A", 4 );
+gap> AllZeroDH("F",4,2); 
+[ 1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23, 25, 26, 27 ]
 </Example>
 </Description>
 </ManSection>
@@ -162,7 +173,7 @@ gap> RealFormsInformation( "A", 4 );
 
 </Body>
 
-<Bibliography Databases="NoCK" />
+<Bibliography Databases="NoCKbib.xml" />
 
 <TheIndex/>
 

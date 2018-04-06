@@ -94,9 +94,9 @@
   
   [1XContents (NoCK)[101X
   
-  1 [33X[0;0YIntroduction and notation[133X
-  2 [33X[0;0Yfunc[133X
-    2.1 [33X[0;0Ydsfds[133X
+  1 [33X[0;0YNotation[133X
+  2 [33X[0;0YObstruction for compact Clifford-Klein form[133X
+    2.1 [33X[0;0YTechnical functions[133X
       2.1-1 NonCompactDimension
       2.1-2 PCoefficients
       2.1-3 PCalculate

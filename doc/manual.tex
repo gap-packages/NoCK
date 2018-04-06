@@ -180,18 +180,17 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 \newpage
 
  
-\chapter{\textcolor{Chapter }{Introduction and notation}}\logpage{[ 1, 0, 0 ]}
-\hyperdef{L}{X87101C2979C534B7}{}
+\chapter{\textcolor{Chapter }{Notation}}\logpage{[ 1, 0, 0 ]}
+\hyperdef{L}{X7DD31B407B9402A3}{}
 {
-  Notation for real Lie algebra is from [CoReLG] Package. Notice: We found some
-misspelling: 
+  Notation for real Lie algebra is from \cite{CoReLG} Package. Notice: We found some misspelling: 
 \begin{itemize}
 \item "D",4,5 is $\mathfrak{so}(1,7)$
 \item "D",4,4 is $\mathfrak{so}(3,5)$
 \item "E",7,3 is $\mathfrak{e}_{7(-25)}=EVII$
 \item "E",7,4 is $\mathfrak{e}_{7(-5)}=EVI$
 \end{itemize}
- To be sure, check rank or dimension and check result with table in [onvin]. 
+ To be sure, check rank or dimension and check result with table in \cite{onvin}. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@G:=RealFormById( "E", 7,3);|
   <Lie algebra of dimension 133 over SqrtField>
@@ -215,44 +214,29 @@ misspelling:
  }
 
  
-\chapter{\textcolor{Chapter }{func}}\logpage{[ 2, 0, 0 ]}
-\hyperdef{L}{X7ED9B2C68136AAFD}{}
+\chapter{\textcolor{Chapter }{Obstruction for compact Clifford-Klein form}}\logpage{[ 2, 0, 0 ]}
+\hyperdef{L}{X7B25E9527EFFF475}{}
+{
+  In this chapter we describe functions for algorithms from \cite{our}. 
+\section{\textcolor{Chapter }{Technical functions}}\logpage{[ 2, 1, 0 ]}
+\hyperdef{L}{X805C42557996F58A}{}
 {
   
-\section{\textcolor{Chapter }{dsfds}}\logpage{[ 2, 1, 0 ]}
-\hyperdef{L}{X7EDAD21A874F3044}{}
-{
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna
-risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in
-dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id,
-scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et,
-tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel.
-Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed
-semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec,
-iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a
-arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget.
-Suspendisse. 
 
 \subsection{\textcolor{Chapter }{NonCompactDimension}}
 \logpage{[ 2, 1, 1 ]}\nobreak
 \hyperdef{L}{X832D9E887973AABE}{}
-{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{NonCompactDimension({\mdseries\slshape L})\index{NonCompactDimension@\texttt{NonCompactDimension}}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{NonCompactDimension({\mdseries\slshape G})\index{NonCompactDimension@\texttt{NonCompactDimension}}
 \label{NonCompactDimension}
 }\hfill{\scriptsize (function)}}\\
 
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna
-risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in
-dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id,
-scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et,
-tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel.
-Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed
-semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec,
-iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a
-arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget.
-Suspendisse. 
+ For a real Lie algebra $G$ constructed by the function \mbox{\texttt{\mdseries\slshape RealFormById}} (from \cite{CoReLG}), this function returns non-compact dimension of $G$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
-  !gapprompt@gap>| !gapinput@RealFormsInformation( "A", 4 );|
+  !gapprompt@gap>| !gapinput@G:=RealFormById("E",6,2); # E6(6)|
+  <Lie algebra of dimension 78 over SqrtField>
+  !gapprompt@gap>| !gapinput@dG:=NonCompactDimension(G);|
+  42
 \end{Verbatim}
  }
 
@@ -266,18 +250,10 @@ Suspendisse.
 }\hfill{\scriptsize (function)}}\\
 
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna
-risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in
-dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id,
-scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et,
-tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel.
-Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed
-semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec,
-iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a
-arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget.
-Suspendisse. 
+ Let $G$ be the compact connecte Lie group of type \mbox{\texttt{\mdseries\slshape type}} and rank \mbox{\texttt{\mdseries\slshape rank}}. Let $\Lambda\,P_{G}=\Lambda (y_1,...,y_l)$ be the exterior algebras over the spaces $P_G$ of the primitive elements in $H^*(G)$. Denote the degrees as follows $|y_j|=2p_j-1,j=1,...,l$. This function returns coefficients $p_1,\ldots,p_l, j=1,...,l$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
-  !gapprompt@gap>| !gapinput@RealFormsInformation( "A", 4 );|
+  !gapprompt@gap>| !gapinput@PCoefficients("D",5);|
+  [ 2, 4, 6, 8, 5 ]
 \end{Verbatim}
  }
 
@@ -291,18 +267,10 @@ Suspendisse.
 }\hfill{\scriptsize (function)}}\\
 
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna
-risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in
-dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id,
-scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et,
-tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel.
-Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed
-semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec,
-iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a
-arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget.
-Suspendisse. 
+ Here $pi=\{ p_1,\ldots,p_l\}$ and $qi=\{ q_1,\ldots,q_m\}$ are sets of coefficients ($l\geq m$). This function returns polynomial: $P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
-  !gapprompt@gap>| !gapinput@RealFormsInformation( "A", 4 );|
+  !gapprompt@gap>| !gapinput@PCalculate([4,2,3],[2,2]);   |
+  t^9+t^5+t^4+1
 \end{Verbatim}
  }
 
@@ -316,18 +284,10 @@ Suspendisse.
 }\hfill{\scriptsize (function)}}\\
 
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna
-risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in
-dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id,
-scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et,
-tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel.
-Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed
-semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec,
-iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a
-arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget.
-Suspendisse. 
+ Let $G^C$ be the complex Lie algebra of type \mbox{\texttt{\mdseries\slshape type}} and rank \mbox{\texttt{\mdseries\slshape rank}}. Let $G$ be the real form of $G^C$ with index \mbox{\texttt{\mdseries\slshape id}} (see \mbox{\texttt{\mdseries\slshape RealFormsInformation}},\cite{CoReLG}). This function returns set of degrees of $P(t)$ that have zero coefficients over all permutation (see Section 7 in \cite{our}). 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
-  !gapprompt@gap>| !gapinput@RealFormsInformation( "A", 4 );|
+  !gapprompt@gap>| !gapinput@AllZeroDH("F",4,2); |
+  [ 1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23, 25, 26, 27 ]
 \end{Verbatim}
  }
 
@@ -340,7 +300,7 @@ Suspendisse.
 }
 
 \bibliographystyle{alpha}
-\bibliography{NoCK}
+\bibliography{NoCKbib.xml}
 
 \addcontentsline{toc}{chapter}{References}
 
