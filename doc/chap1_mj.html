@@ -8,7 +8,7 @@
 <script type="text/javascript"
   src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<title>GAP (NoCK) - Chapter 1: Introduction</title>
+<title>GAP (NoCK) - Chapter 1: Notation</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -18,48 +18,63 @@
 <body class="chap1"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap1.html">[MathJax off]</a></p>
-<p><a id="X7DFB63A97E67C0A1" name="X7DFB63A97E67C0A1"></a></p>
-<div class="ChapSects"><a href="chap1_mj.html#X7DFB63A97E67C0A1">1 <span class="Heading">Introduction</span></a>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X7A0F3100829CD1E1">1.1 <span class="Heading">The simple real Lie algebras</span></a>
-</span>
-</div>
+<p><a id="X7DD31B407B9402A3" name="X7DD31B407B9402A3"></a></p>
+<div class="ChapSects"><a href="chap1_mj.html#X7DD31B407B9402A3">1 <span class="Heading">Notation</span></a>
 </div>
 
-<h3>1 <span class="Heading">Introduction</span></h3>
+<h3>1 <span class="Heading">Notation</span></h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia magna risus, convallis tempus purus efficitur at. Curabitur diam lacus, posuere in dui eget, lobortis tempor arcu. Donec lectus quam, egestas in massa id, scelerisque mollis turpis. Maecenas non mi placerat, venenatis justo et, tincidunt enim. Etiam porttitor maximus diam, non semper eros ornare vel. Integer consequat, nibh ac sollicitudin maximus, nisi turpis gravida diam, sed semper purus sem tincidunt dolor. Proin id justo ornare, tempor arcu nec, iaculis ipsum. Maecenas in felis ut libero sollicitudin sodales vestibulum a arcu. Integer blandit imperdiet nunc, eget volutpat libero mattis eget. Suspendisse.</p>
+<p>Notation for real Lie algebra is from <a href="chapBib_mj.html#biBCoReLG">[DFdG14]</a> Package. Notice: We found some misspelling:</p>
 
-<p><a id="X7A0F3100829CD1E1" name="X7A0F3100829CD1E1"></a></p>
 
-<h4>1.1 <span class="Heading">The simple real Lie algebras</span></h4>
+<ul>
+<li><p>"D",4,5 is <span class="SimpleMath">\(\mathfrak{so}(1,7)\)</span></p>
 
-<p>Coś wpisać jak używamy pakiet CORELG i SLA.</p>
+</li>
+<li><p>"D",4,4 is <span class="SimpleMath">\(\mathfrak{so}(3,5)\)</span></p>
+
+</li>
+<li><p>"E",7,3 is <span class="SimpleMath">\(\mathfrak{e}_{7(-25)}=EVII\)</span></p>
+
+</li>
+<li><p>"E",7,4 is <span class="SimpleMath">\(\mathfrak{e}_{7(-5)}=EVI\)</span></p>
+
+</li>
+</ul>
+<p>To be sure, check rank or dimension and check result with table in <a href="chapBib_mj.html#biBonvin">[OV90]</a>.</p>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L:=RealFormById("E",8,2);</span>
-&lt;Lie algebra of dimension 248 over SqrtField&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">allCSA := CartanSubalgebrasOfRealForm(L);;time;</span>
-67224
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L:=RealFormById("E",8,2,CF(4));</span>
-&lt;Lie algebra of dimension 248 over GaussianRationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">allCSA := CartanSubalgebrasOfRealForm(L);;time;</span>
-7301
-# We remark that both computations are exactly the same; 
-# the difference in timing is caused by the fact that 
-# arithmetic over SqrtField is slower.
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G:=RealFormById( "E", 7,3);</span>
+&lt;Lie algebra of dimension 133 over SqrtField&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rankG:=Dimension(CartanSubalgebra(G));</span>
+7
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rankRG:=Dimension(CartanSubspace(G));</span>
+3
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dimG:=Dimension(G);</span>
+133
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P:=CartanDecomposition( G ).P;</span>
+&lt;vector space over SqrtField, with 54 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dimPforG:=Dimension(P);</span>
+54
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">K:=CartanDecomposition( G ).K;</span>
+&lt;Lie algebra of dimension 79 over SqrtField&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rankK:= Dimension(CartanSubalgebra(K));</span>
+7
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dimK:= Dimension(K);</span>
+79
 </pre></div>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chapBib_mj.html">Bib</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
