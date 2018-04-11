@@ -12,8 +12,8 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "NoCK-Package for computitation obstruction for compact Clifford-Klein forms.",
-Version := "0.7",
-Date := "6/04/2018",
+Version := "1.0",
+Date := "11/04/2018",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",

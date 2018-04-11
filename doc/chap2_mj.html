@@ -48,7 +48,7 @@
 <h5>2.1-1 NonCompactDimension</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NonCompactDimension</code>( <var class="Arg">G</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For a real Lie algebra <span class="SimpleMath">\(G\)</span> constructed by the function <var class="Arg">RealFormById</var> (from <a href="chapBib_mj.html#biBCoReLG">[DFdG14]</a>), this function returns non-compact dimension of <span class="SimpleMath">\(G\)</span>.</p>
+<p>For a real Lie algebra <span class="SimpleMath">\(G\)</span> constructed by the function <var class="Arg">RealFormById</var> (from <a href="chapBib_mj.html#biBCoReLG">[DFdG14]</a>), this function returns the non-compact dimension of <span class="SimpleMath">\(G\)</span>.</p>
 
 
 <div class="example"><pre>
@@ -63,7 +63,7 @@
 <h5>2.1-2 PCoefficients</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PCoefficients</code>( <var class="Arg">type</var>, <var class="Arg">rank</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Let <span class="SimpleMath">\(G\)</span> be the compact connecte Lie group of type <var class="Arg">type</var> and rank <var class="Arg">rank</var>. Let <span class="SimpleMath">\(\Lambda\,P_{G}=\Lambda (y_1,...,y_l)\)</span> be the exterior algebras over the spaces <span class="SimpleMath">\(P_G\)</span> of the primitive elements in <span class="SimpleMath">\(H^*(G)\)</span>. Denote the degrees as follows <span class="SimpleMath">\(|y_j|=2p_j-1,j=1,...,l\)</span>. This function returns coefficients <span class="SimpleMath">\(p_1,\ldots,p_l, j=1,...,l\)</span>.</p>
+<p>Let <span class="SimpleMath">\(G\)</span> be the compact connected Lie group of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">\(\Lambda\,P_{G}=\Lambda (y_1,...,y_l)\)</span> be the exterior algebras over the spaces <span class="SimpleMath">\(P_G\)</span> of the primitive elements in <span class="SimpleMath">\(H^*(G)\)</span>. Denote the degrees as follows <span class="SimpleMath">\(|y_j|=2p_j-1,j=1,...,l\)</span>. This function returns coefficients <span class="SimpleMath">\(p_1,\ldots,p_l, j=1,...,l\)</span>.</p>
 
 
 <div class="example"><pre>
@@ -76,7 +76,7 @@
 <h5>2.1-3 PCalculate</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PCalculate</code>( <var class="Arg">pi</var>, <var class="Arg">qi</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Here <span class="SimpleMath">\(pi=\{ p_1,\ldots,p_l\}\)</span> and <span class="SimpleMath">\(qi=\{ q_1,\ldots,q_m\}\)</span> are sets of coefficients (<span class="SimpleMath">\(l\geq m\)</span>). This function returns polynomial: <span class="SimpleMath">\(P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})\)</span>.</p>
+<p>Here <span class="SimpleMath">\(pi=\{ p_1,\ldots,p_l\}\)</span> and <span class="SimpleMath">\(qi=\{ q_1,\ldots,q_m\}\)</span> are sets of coefficients (<span class="SimpleMath">\(l\geq m\)</span>). This function returns the polynomial: <span class="SimpleMath">\(P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})\)</span>.</p>
 
 
 <div class="example"><pre>
@@ -89,7 +89,7 @@ t^9+t^5+t^4+1
 <h5>2.1-4 AllZeroDH</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AllZeroDH</code>( <var class="Arg">type</var>, <var class="Arg">rank</var>, <var class="Arg">id</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Let <span class="SimpleMath">\(G^C\)</span> be the complex Lie algebra of type <var class="Arg">type</var> and rank <var class="Arg">rank</var>. Let <span class="SimpleMath">\(G\)</span> be the real form of <span class="SimpleMath">\(G^C\)</span> with index <var class="Arg">id</var> (see <var class="Arg">RealFormsInformation</var>,<a href="chapBib_mj.html#biBCoReLG">[DFdG14]</a>). This function returns set of degrees of <span class="SimpleMath">\(P(t)\)</span> that have zero coefficients over all permutation (see Section 7 in <a href="chapBib_mj.html#biBour">[BJS+]</a>).</p>
+<p>Let <span class="SimpleMath">\(G^C\)</span> be the complex Lie algebra of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">\(G\)</span> be the real form of <span class="SimpleMath">\(G^C\)</span> with the index <var class="Arg">id</var> (see <var class="Arg">RealFormsInformation</var>,<a href="chapBib_mj.html#biBCoReLG">[DFdG14]</a>). This function returns the set of degrees of <span class="SimpleMath">\(P(t)\)</span> that have zero coefficients over all permutation (see Section 7 in <a href="chapBib_mj.html#biBour">[BJS+]</a>).</p>
 
 
 <div class="example"><pre>
