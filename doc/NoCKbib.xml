@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+edu.pl<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE file SYSTEM "bibxmlext.dtd">
 <file>
 <entry id="onvin"><book>
@@ -21,13 +21,13 @@
     <name><first>W. A.</first><last>de Graaf</last></name>
   </author>
   <title>CoReLG, computation with real Lie groups, Version 1.20</title>
-  <howpublished><URL>http://users.monash.edu/~heikod/corelg/</URL></howpublished>*
-  <month>Dec</month>*
-  <year>2014</year>*
-  <note>Refereed GAP package</note>*
+  <howpublished><URL>http://users.monash.edu/~heikod/corelg/</URL></howpublished>
+  <month>Dec</month>
+  <year>2014</year>
+  <note>Refereed GAP package</note>
   <key>CoReLG</key>
 </misc></entry>
-<entry id="our"><article>
+<entry id="our"><misc>
   <author>
     <name><first>M.</first><last>Bocheński</last></name>
     <name><first>P.</first><last>Jastrzębski</last></name>
@@ -36,8 +36,8 @@
     <name><first>A.</first><last>Woike</last></name>
   </author>
   <title>Semisimple subalgebras in simple Lie algebras and a computational approach to the compact Clifford-Klein forms problem</title>
-  <note>in preparation</note>
+  <howpublished><URL>https://arxiv.org/abs/1804.03484</URL></howpublished>
   <key>our</key>
- </article></entry>
+ </misc></entry>
 
 </file>

@@ -7,7 +7,7 @@
 <TitlePage>
   <Title>NoCK</Title>
   <Subtitle>Computing obstruction for compact Clifford-Klein form</Subtitle>
-  <Version>Version 0.7</Version>
+  <Version>Version 1.0</Version>
 
 <Author>
   Maciej Bocheński
@@ -81,16 +81,16 @@ NoCK Package is free software;  you can redistribute it and/or modify it under t
 
 <Chapter> <Heading>Notation</Heading>
 
-Notation for real Lie algebra is from <Cite Key="CoReLG" /> Package.
+Notation for real Lie algebra is from CoReLG Package, <Cite Key="CoReLG" />.
 
-Notice: We found some misspelling:
+Notice: we found some misspellings:
 <List>
  <Item>"D",4,5 is <M>\mathfrak{so}(1,7)</M></Item>
  <Item>"D",4,4 is <M>\mathfrak{so}(3,5)</M></Item>
  <Item>"E",7,3 is <M>\mathfrak{e}_{7(-25)}=EVII</M></Item>
  <Item>"E",7,4 is <M>\mathfrak{e}_{7(-5)}=EVI</M></Item>
 </List>
-To be sure, check rank or dimension and check result with table in <Cite Key="onvin" />.
+To be sure, check the rank or the dimension and check the result with the table in <Cite Key="onvin" />.
 
 <Example>
 gap> G:=RealFormById( "E", 7,3);
@@ -124,7 +124,7 @@ In this chapter we describe functions for algorithms from <Cite Key="our"/>.
 <Func Name="NonCompactDimension"  Arg="G"
       Comm="real forms"/>
 <Description>
-For a real Lie algebra <M>G</M> constructed by the function <A>RealFormById</A> (from <Cite Key="CoReLG"/>), this function returns non-compact dimension of <M>G</M>.
+For a real Lie algebra <M>G</M> constructed by the function <A>RealFormById</A> (from <Cite Key="CoReLG"/>), this function returns the non-compact dimension of <M>G</M>.
 
 <Example>
 gap> G:=RealFormById("E",6,2); # E6(6)
@@ -136,7 +136,7 @@ gap> dG:=NonCompactDimension(G);
 </ManSection><ManSection>
 <Func Name="PCoefficients"  Arg="type, rank"/>
 <Description>
-Let <M>G</M> be the compact connecte Lie group of type <A>type</A> and rank <A>rank</A>.  Let
+Let <M>G</M> be the compact connected Lie group of the type <A>type</A> and the rank <A>rank</A>.  Let
 <M>\Lambda\,P_{G}=\Lambda (y_1,...,y_l)</M>
 be the exterior algebras over the spaces <M>P_G</M> of the primitive elements in <M>H^*(G)</M>. Denote the degrees as follows
 <M>|y_j|=2p_j-1,j=1,...,l</M>. This function returns coefficients <M>p_1,\ldots,p_l, j=1,...,l</M>.
@@ -149,7 +149,7 @@ gap> PCoefficients("D",5);
 <Func Name="PCalculate"  Arg="pi, qi"/>
 <Description>
 Here <M>pi=\{ p_1,\ldots,p_l\}</M> and <M>qi=\{ q_1,\ldots,q_m\}</M> are sets of coefficients (<M>l\geq m</M>). This function 
-returns polynomial: 
+returns the polynomial: 
 <M>P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})</M>.
 <Example>
 gap> PCalculate([4,2,3],[2,2]);   
@@ -159,8 +159,8 @@ t^9+t^5+t^4+1
 </ManSection><ManSection>
 <Func Name="AllZeroDH"  Arg="type, rank, id"/>
 <Description>
-Let <M>G^C</M> be the complex Lie algebra of type <A>type</A> and rank <A>rank</A>. Let <M>G</M> be the real form of <M>G^C</M>
- with index <A>id</A> (see <A>RealFormsInformation</A>,<Cite Key="CoReLG"/>). This function returns set of degrees of <M>P(t)</M>
+Let <M>G^C</M> be the complex Lie algebra of the type <A>type</A> and the rank <A>rank</A>. Let <M>G</M> be the real form of <M>G^C</M>
+ with the index <A>id</A> (see <A>RealFormsInformation</A>,<Cite Key="CoReLG"/>). This function returns the set of degrees of <M>P(t)</M>
  that have zero coefficients over all permutation (see Section 7 in <Cite Key="our"/>).
 <Example>
 gap> AllZeroDH("F",4,2); 

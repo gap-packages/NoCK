@@ -3,7 +3,7 @@
   [1XReferences[101X
   
   [[20XBJS+[120X]  [16XBocheński,  M.,  Jastrzębski,  P., Szczepkowska, A., Tralle, A. and Woike, A.[116X, [17XSemisimple subalgebras in simple Lie algebras and a
-  computational approach to the compact Clifford-Klein forms problem[117X, ((in preparation)).
+  computational approach to the compact Clifford-Klein forms problem[117X, https://arxiv.org/abs/1804.03484.
   
   [[20XDFdG14[120X]  [16XDietrich,  H.,  Faccin,  P.  and  de Graaf, W. A.[116X, [17XCoReLG, computation with real Lie groups, Version 1.20[117X (2014), ((Refereed GAP
   package)), http://users.monash.edu/~heikod/corelg/.

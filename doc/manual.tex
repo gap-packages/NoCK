@@ -98,7 +98,7 @@
 {\Huge \textbf{Computing obstruction for compact Clifford-Klein form\mbox{}}}\\
 \vfill
 
-{\Huge Version 0.7\mbox{}}\\[1cm]
+{\Huge Version 1.0\mbox{}}\\[1cm]
 {April 2018 \mbox{}}\\[1cm]
 \mbox{}\\[2cm]
 {\Large \textbf{ Maciej Boche{\a'n}ski   \mbox{}}}\\
@@ -183,14 +183,15 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 \chapter{\textcolor{Chapter }{Notation}}\logpage{[ 1, 0, 0 ]}
 \hyperdef{L}{X7DD31B407B9402A3}{}
 {
-  Notation for real Lie algebra is from \cite{CoReLG} Package. Notice: We found some misspelling: 
+  Notation for real Lie algebra is from CoReLG Package, \cite{CoReLG}. Notice: we found some misspellings: 
 \begin{itemize}
 \item "D",4,5 is $\mathfrak{so}(1,7)$
 \item "D",4,4 is $\mathfrak{so}(3,5)$
 \item "E",7,3 is $\mathfrak{e}_{7(-25)}=EVII$
 \item "E",7,4 is $\mathfrak{e}_{7(-5)}=EVI$
 \end{itemize}
- To be sure, check rank or dimension and check result with table in \cite{onvin}. 
+ To be sure, check the rank or the dimension and check the result with the
+table in \cite{onvin}. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@G:=RealFormById( "E", 7,3);|
   <Lie algebra of dimension 133 over SqrtField>
@@ -231,7 +232,7 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 }\hfill{\scriptsize (function)}}\\
 
 
- For a real Lie algebra $G$ constructed by the function \mbox{\texttt{\mdseries\slshape RealFormById}} (from \cite{CoReLG}), this function returns non-compact dimension of $G$. 
+ For a real Lie algebra $G$ constructed by the function \mbox{\texttt{\mdseries\slshape RealFormById}} (from \cite{CoReLG}), this function returns the non-compact dimension of $G$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@G:=RealFormById("E",6,2); # E6(6)|
   <Lie algebra of dimension 78 over SqrtField>
@@ -250,7 +251,7 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 }\hfill{\scriptsize (function)}}\\
 
 
- Let $G$ be the compact connecte Lie group of type \mbox{\texttt{\mdseries\slshape type}} and rank \mbox{\texttt{\mdseries\slshape rank}}. Let $\Lambda\,P_{G}=\Lambda (y_1,...,y_l)$ be the exterior algebras over the spaces $P_G$ of the primitive elements in $H^*(G)$. Denote the degrees as follows $|y_j|=2p_j-1,j=1,...,l$. This function returns coefficients $p_1,\ldots,p_l, j=1,...,l$. 
+ Let $G$ be the compact connected Lie group of the type \mbox{\texttt{\mdseries\slshape type}} and the rank \mbox{\texttt{\mdseries\slshape rank}}. Let $\Lambda\,P_{G}=\Lambda (y_1,...,y_l)$ be the exterior algebras over the spaces $P_G$ of the primitive elements in $H^*(G)$. Denote the degrees as follows $|y_j|=2p_j-1,j=1,...,l$. This function returns coefficients $p_1,\ldots,p_l, j=1,...,l$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@PCoefficients("D",5);|
   [ 2, 4, 6, 8, 5 ]
@@ -267,7 +268,7 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 }\hfill{\scriptsize (function)}}\\
 
 
- Here $pi=\{ p_1,\ldots,p_l\}$ and $qi=\{ q_1,\ldots,q_m\}$ are sets of coefficients ($l\geq m$). This function returns polynomial: $P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})$. 
+ Here $pi=\{ p_1,\ldots,p_l\}$ and $qi=\{ q_1,\ldots,q_m\}$ are sets of coefficients ($l\geq m$). This function returns the polynomial: $P(t)=\prod_{j=m+1}^l(1+t^{2p_j-1})\prod_{i=1}^m(1-t^{2p_i})/(1-t^{2q_i})$. 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@PCalculate([4,2,3],[2,2]);   |
   t^9+t^5+t^4+1
@@ -284,7 +285,7 @@ or (at your option) any later version. \mbox{}}\\[1cm]
 }\hfill{\scriptsize (function)}}\\
 
 
- Let $G^C$ be the complex Lie algebra of type \mbox{\texttt{\mdseries\slshape type}} and rank \mbox{\texttt{\mdseries\slshape rank}}. Let $G$ be the real form of $G^C$ with index \mbox{\texttt{\mdseries\slshape id}} (see \mbox{\texttt{\mdseries\slshape RealFormsInformation}},\cite{CoReLG}). This function returns set of degrees of $P(t)$ that have zero coefficients over all permutation (see Section 7 in \cite{our}). 
+ Let $G^C$ be the complex Lie algebra of the type \mbox{\texttt{\mdseries\slshape type}} and the rank \mbox{\texttt{\mdseries\slshape rank}}. Let $G$ be the real form of $G^C$ with the index \mbox{\texttt{\mdseries\slshape id}} (see \mbox{\texttt{\mdseries\slshape RealFormsInformation}},\cite{CoReLG}). This function returns the set of degrees of $P(t)$ that have zero coefficients over all permutation (see Section 7 in \cite{our}). 
 \begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
   !gapprompt@gap>| !gapinput@AllZeroDH("F",4,2); |
   [ 1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23, 25, 26, 27 ]

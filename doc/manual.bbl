@@ -6,7 +6,9 @@ M.~Boche{\a'n}ski, P.~Jastrz{\k e}bski, A.~Szczepkowska, A.~Tralle, and
   A.~Woike.
 \newblock Semisimple subalgebras in simple lie algebras and a computational
   approach to the compact clifford-klein forms problem.
-\newblock in preparation.
+\newblock \href {https://arxiv.org/abs/1804.03484}
+  {\texttt{https://arxiv.org/}\discretionary {}{}{}\texttt{abs/}\discretionary
+  {}{}{}\texttt{1804.03484}}.
 
 \bibitem[DFdG14]{CoReLG}
 H.~Dietrich, P.~Faccin, and W.~A. de~Graaf.
