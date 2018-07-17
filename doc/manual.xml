@@ -7,7 +7,7 @@
 <TitlePage>
   <Title>NoCK</Title>
   <Subtitle>Computing obstruction for compact Clifford-Klein form</Subtitle>
-  <Version>Version 1.0</Version>
+  <Version>Version 1.1</Version>
 
 <Author>
   Maciej Bocheński
@@ -53,7 +53,7 @@
        </Address> 
   </Author>
 
-  <Date>April 2018
+  <Date>July 2018
 </Date>
 
 <Abstract>
