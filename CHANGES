@@ -9,3 +9,6 @@ Version 1.0: 2018/04/11
 
 Version 1.1: 2018/07/17
   Added short test.
+
+Version 1.2: 2018/07/17
+  Fixes with MathJaxURL (via https for Github Pages).

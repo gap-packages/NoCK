@@ -12,7 +12,7 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "NoCK-Package for computitation obstruction for compact Clifford-Klein forms.",
-Version := "1.1",
+Version := "1.2",
 Date := "17/07/2018",
 
 PackageWWWHome :=

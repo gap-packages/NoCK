@@ -11,8 +11,8 @@ entries :=
   [ "\033[1X\033[33X\033[0;-2YNotation\033[133X\033[101X", "1", [ 1, 0, 0 ], 1, 4, "notation", "X7DD31B407B9402A3" ], 
   [ "\033[1X\033[33X\033[0;-2YObstruction for compact Clifford-Klein form\033[133X\033[101X", "2", [ 2, 0, 0 ], 1, 5, 
       "obstruction for compact clifford-klein form", "X7B25E9527EFFF475" ], 
-  [ "\033[1X\033[33X\033[0;-2YTechnical functions\033[133X\033[101X", "2.1", [ 2, 1, 0 ], 6, 5, "technical functions", "X805C42557996F58A" ]
-    , [ "Bibliography", "bib", [ "Bib", 0, 0 ], 1, 7, "bibliography", "X7A6F98FD85F02BFE" ], 
+  [ "\033[1X\033[33X\033[0;-2YTechnical functions\033[133X\033[101X", "2.1", [ 2, 1, 0 ], 6, 5, "technical functions", "X805C42557996F58A" 
+     ], [ "Bibliography", "bib", [ "Bib", 0, 0 ], 1, 7, "bibliography", "X7A6F98FD85F02BFE" ], 
   [ "References", "bib", [ "Bib", 0, 0 ], 1, 7, "references", "X7A6F98FD85F02BFE" ], 
   [ "Index", "ind", [ "Ind", 0, 0 ], 1, 8, "index", "X83A0356F839C696F" ], 
   [ "\033[2XNonCompactDimension\033[102X", "2.1-1", [ 2, 1, 1 ], 9, 5, "noncompactdimension", "X832D9E887973AABE" ], 
