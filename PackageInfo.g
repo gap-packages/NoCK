@@ -12,8 +12,8 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "NoCK-Package for computitation obstruction for compact Clifford-Klein forms.",
-Version := "1.0",
-Date := "11/04/2018",
+Version := "1.1",
+Date := "17/07/2018",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",
@@ -93,7 +93,7 @@ Persons := [
 ##    "other"         for all other packages
 ##
 # Status := "accepted",
-Status := "dev",
+Status := "submitted",
 
 ##  You must provide the next two entries if and only if the status is 
 ##  "accepted" because is was successfully refereed:
@@ -187,7 +187,19 @@ Dependencies := rec(
                       
 ),
 
-AvailabilityTest := ReturnTrue,
+#AvailabilityTest := ReturnTrue,
+AvailabilityTest := function()
+  local path, file;
+    # test for existence of the compiled binary
+    path:= DirectoriesPackagePrograms( "nock" );
+    file:= Filename( path, "hello" );
+    if file = fail then
+      LogPackageLoadingMessage( PACKAGE_WARNING,
+          [ "The program `hello' is not compiled,",
+            "`HelloWorld()' is thus unavailable." ] );
+    fi;
+    return true;
+  end,
 
 BannerString := Concatenation( 
     "----------------------------------------------------------------\n",
@@ -199,7 +211,7 @@ BannerString := Concatenation(
     
     "----------------------------------------------------------------\n" ),
 
-
+TestFile := "tst/testall.g",
 
 Keywords := ["real lie algebras", "clifford-klein forms"]
 
