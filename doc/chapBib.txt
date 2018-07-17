@@ -2,13 +2,13 @@
   
   [1XReferences[101X
   
-  [[20XBJS+[120X]  [16XBocheński,  M.,  Jastrzębski,  P., Szczepkowska, A., Tralle, A. and Woike, A.[116X, [17XSemisimple subalgebras in simple Lie algebras and a
+  [[20XBJS+[120X]  [16XBocheński,  M.,  Jastrzębski, P., Szczepkowska, A., Tralle, A. and Woike, A.[116X, [17XSemisimple subalgebras in simple Lie algebras and a
   computational approach to the compact Clifford-Klein forms problem[117X, https://arxiv.org/abs/1804.03484.
   
-  [[20XDFdG14[120X]  [16XDietrich,  H.,  Faccin,  P.  and  de Graaf, W. A.[116X, [17XCoReLG, computation with real Lie groups, Version 1.20[117X (2014), ((Refereed GAP
+  [[20XDFdG14[120X]  [16XDietrich,  H.,  Faccin,  P.  and de Graaf, W. A.[116X, [17XCoReLG, computation with real Lie groups, Version 1.20[117X (2014), ((Refereed GAP
   package)), http://users.monash.edu/~heikod/corelg/.
   
-  [[20XOV90[120X]  [16XOnishchik,  A. and Vinberg, E.[116X, [17XLie Groups and Algebraic Groups[117X, Springer-Verlag Berlin Heidelberg, first edition, Springer Series
+  [[20XOV90[120X]  [16XOnishchik, A. and Vinberg, E.[116X, [17XLie Groups and Algebraic Groups[117X, Springer-Verlag Berlin Heidelberg, first edition, Springer Series
   in Soviet Mathematics (1990), ((Original Russian edition published by Nauka, Moscow 1988)).
   
   
