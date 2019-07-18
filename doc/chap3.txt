@@ -1,0 +1,71 @@
+  
+  [1X3 [33X[0;0YAlgorithm example[133X[101X
+  
+  [33X[0;0YIn  this  chapter  we use additionaly functions from the following packages:
+  CoReLG  [DFdG14]  and SLA [dG]. We will show in detail the split case (for a
+  non-split  case you should use algoritm to generate regular subalgebras from
+  [DFdG15]).  For  example,  we take [22XG=mathfrake_6(6)[122X (tuple "E",6,2 in CoReLG
+  notation). We calculate [3XAllZeroDH[103X on it.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XAllZeroDH("E",6,2);[127X[104X
+    [4X[28X[ 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 27, [128X[104X
+    [4X[28X 28, 29, 30, 31, 32, 35, 36, 37, 38, 39, 40, 41 ][128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YWe generate all regular subalgebras of complexification.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XGC:=SimpleLieAlgebra("E",6,Rationals);;  [127X[104X
+    [4X[25Xgap>[125X [27XREG:=RegularSemisimpleSubalgebras(GC);;[127X[104X
+    [4X[25Xgap>[125X [27XL0:=List( REG, SemiSimpleType );   [127X[104X
+    [4X[28X[ "A1", "A1 A1", "A2 A1", "A4", "D5", "A4 A1", "A2 A1 A1", "A2 A1 A2", "A3 A1", [128X[104X
+    [4X[28X "A1 A1 A1", "A2", "A3", "A5", "A2 A2", "D4", "A5 A1", "A3 A1 A1", "A1 A1 A1 A1", [128X[104X
+    [4X[28X "A2 A2 A2" ][128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YFor  each  subalgebras  we  take  the  split  real  form  and  calculate its
+  non-compact dimension.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XL0[4]; [127X[104X
+    [4X[28X"A4"[128X[104X
+    [4X[25Xgap>[125X [27XRealFormsInformation( "A", 4 ); [127X[104X
+    [4X[28X[128X[104X
+    [4X[28X  There are 4 simple real forms with complexification A4[128X[104X
+    [4X[28X    1 is of type su(5), compact form[128X[104X
+    [4X[28X    2 - 3 are of type su(p,5-p) with 1 <= p <= 2[128X[104X
+    [4X[28X    4 is of type sl(5,R)[128X[104X
+    [4X[28X  Index '0' returns the realification of A4[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XG:=RealFormById("A",4,4);;     [127X[104X
+    [4X[25Xgap>[125X [27XNonCompactDimension( G );      [127X[104X
+    [4X[28X14[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YNumber  14  is  in output of [3XAllZeroDH[103X function, so for [22Xmathfrakg=e_6(6)[122X and
+  [22Xmathfrakh=mathfraksl(5,R)[122X  corresponding  homogeneous spaces [22XG/H[122X do not have
+  compact Clifford–Klein forms.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XL0[5];                                                          [127X[104X
+    [4X[28X"D5"[128X[104X
+    [4X[25Xgap>[125X [27XRealFormsInformation( "D", 5 ); [127X[104X
+    [4X[28X[128X[104X
+    [4X[28X  There are 7 simple real forms with complexification D5[128X[104X
+    [4X[28X    1 is of type so(10), compact form[128X[104X
+    [4X[28X    2 - 3 are of type so(2p,10-2p) with 1 <= p <= 2[128X[104X
+    [4X[28X    4 is of type so*(10)[128X[104X
+    [4X[28X    5 is of type so(9,1)[128X[104X
+    [4X[28X    6 - 7 are of type so(2p+1,10-2p-1) with 1 <= p <= 2[128X[104X
+    [4X[28X  Index '0' returns the realification of D5[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XG:=RealFormById("D",5,7);; [127X[104X
+    [4X[25Xgap>[125X [27XNonCompactDimension( G );                                       [127X[104X
+    [4X[28X25[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YNumber  25  is  not in output of [3XAllZeroDH[103X function, so for [22Xmathfrakg=e_6(6)[122X
+  and  [22Xmathfrakh=mathfrakso(5,5)[122X  our  algoritm does not provide a solution to
+  the problem.[133X
+  

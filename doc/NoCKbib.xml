@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE file SYSTEM "bibxmlext.dtd">
+<file>
+<entry id="onvin"><book>
+  <author>
+    <name><first>A.L.</first><last>Onishchik</last></name>
+    <name><first>E.B.</first><last>Vinberg</last></name>
+  </author>
+  <title>Lie Groups and Algebraic Groups</title>
+  <publisher>Springer-Verlag Berlin Heidelberg</publisher>
+  <year>1990</year>
+  <series>Springer Series in Soviet Mathematics</series>
+  <edition>first</edition>
+  <note>Original Russian edition published by Nauka, Moscow 1988</note>
+  <key>onvin</key>
+</book></entry>
+<entry id="CoReLG"><misc>
+  <author>
+    <name><first>H.</first><last>Dietrich</last></name>
+    <name><first>P.</first><last>Faccin</last></name>
+    <name><first>W. A.</first><last>de Graaf</last></name>
+  </author>
+  <title>CoReLG, computation with real Lie groups, Version 1.20</title>
+  <howpublished><URL>http://users.monash.edu/~heikod/corelg/</URL></howpublished>
+  <month>Dec</month>
+  <year>2014</year>
+  <note>Refereed GAP package</note>
+  <key>CoReLG</key>
+</misc></entry>
+<entry id="SLA"><misc>
+  <author>
+    <name><first>W. A.</first><last>de Graaf</last></name>
+  </author>
+  <title>SLA, Computing with Simple Lie Algebras, Version 1.5.2</title>
+  <howpublished><URL>https://gap-packages.github.io/sla/</URL></howpublished>
+  <note>Refereed GAP package</note>
+  <key>SLA</key>
+</misc></entry>
+<entry id="our"><misc>
+  <author>
+    <name><first>M.</first><last>Bocheński</last></name>
+    <name><first>P.</first><last>Jastrzębski</last></name>
+    <name><first>A.</first><last>Szczepkowska</last></name>
+    <name><first>A.</first><last>Tralle</last></name>
+    <name><first>A.</first><last>Woike</last></name>
+  </author>
+  <title>Semisimple subalgebras in simple Lie algebras and a computational approach to the compact Clifford-Klein forms problem</title>
+  <howpublished><URL>https://doi.org/10.1080/10586458.2018.1492475</URL></howpublished>
+  <journal>Experimental Mathematics</journal>
+  <key>our</key>
+ </misc></entry>
+<entry id="DFG"><article>
+  <author>
+    <name><first>H.</first><last>Dietrich</last></name>
+    <name><first>P.</first><last>Faccin</last></name>
+    <name><first>W. A.</first><last>de Graaf</last></name>
+  </author>  
+  <title>Regular subalgebras and nilpotent orbits of real graded Lie algebras</title>
+  <journal>Journal of Algebra</journal>
+  <year>2015</year>
+  <number>423</number>
+  <pages>1044&ndash;1079</pages>
+</article></entry>
+</file>

@@ -1,0 +1,41 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{DFdG15}
+
+\bibitem[BJS{\etalchar{+}}]{our}
+M.~Boche{\a'n}ski, P.~Jastrz{\k e}bski, A.~Szczepkowska, A.~Tralle, and
+  A.~Woike.
+\newblock Semisimple subalgebras in simple lie algebras and a computational
+  approach to the compact clifford-klein forms problem.
+\newblock \href {https://doi.org/10.1080/10586458.2018.1492475}
+  {\texttt{https://doi.org/}\discretionary
+  {}{}{}\texttt{10.1080/}\discretionary {}{}{}\texttt{10586458.2018.1492475}}.
+
+\bibitem[DFdG14]{CoReLG}
+H.~Dietrich, P.~Faccin, and W.~A. de~Graaf.
+\newblock Corelg, computation with real lie groups, version 1.20.
+\newblock \href {http://users.monash.edu/~heikod/corelg/}
+  {\texttt{http://users.monash.edu/}\discretionary
+  {}{}{}\texttt{\texttt{\symbol{126}}heikod/}\discretionary
+  {}{}{}\texttt{corelg/}}, Dec 2014.
+\newblock Refereed GAP package.
+
+\bibitem[DFdG15]{DFG}
+H.~Dietrich, P.~Faccin, and W.~A. de~Graaf.
+\newblock Regular subalgebras and nilpotent orbits of real graded lie algebras.
+\newblock {\em Journal of Algebra}, (423):1044{\textendash}1079, 2015.
+
+\bibitem[dG]{SLA}
+W.~A. de~Graaf.
+\newblock Sla, computing with simple lie algebras, version 1.5.2.
+\newblock \href {https://gap-packages.github.io/sla/}
+  {\texttt{https://gap-packages.github.io/}\discretionary {}{}{}\texttt{sla/}}.
+\newblock Refereed GAP package.
+
+\bibitem[OV90]{onvin}
+A.~Onishchik and E.~Vinberg.
+\newblock {\em Lie Groups and Algebraic Groups}.
+\newblock Springer Series in Soviet Mathematics. Springer-Verlag Berlin
+  Heidelberg, first edition, 1990.
+\newblock Original Russian edition published by Nauka, Moscow 1988.
+
+\end{thebibliography}

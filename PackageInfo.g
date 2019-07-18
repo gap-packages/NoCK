@@ -11,9 +11,9 @@ SetPackageInfo( rec(
 
 
 PackageName := "NoCK",
-Subtitle := "NoCK-Package for computitation obstruction for compact Clifford-Klein forms.",
-Version := "1.2",
-Date := "17/07/2018",
+Subtitle := "NoCK-Package for computing obstruction for compact Clifford-Klein forms.",
+Version := "1.3",
+Date := "18/07/2019",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",
@@ -92,17 +92,13 @@ Persons := [
 ##    "dev"           for development versions of packages 
 ##    "other"         for all other packages
 ##
-# Status := "accepted",
-Status := "submitted",
-
-##  You must provide the next two entries if and only if the status is 
-##  "accepted" because is was successfully refereed:
+Status := "accepted",
+##  You must provide the next two entries if and only if the status is
+##  "accepted":
 # format: 'name (place)'
-# CommunicatedBy := "Mike Atkinson (St Andrews)",
-#CommunicatedBy := "",
+CommunicatedBy := "Leonard Soicher (QMUL)",
 # format: mm/yyyy
-# AcceptDate := "08/1999",
-#AcceptDate := "",
+AcceptDate := "07/2019", # or whenever the accepted version is complete
 
 
 README_URL := 
@@ -113,7 +109,7 @@ PackageInfoURL :=
 
 AbstractHTML := 
   "The <span class=\"pkgname\">NoCK</span> package \
-   is used for computitation Tolzanos's obstruction \
+   is used for computing Tolzanos's obstruction \
    for compact Clifford-Klein forms",
 
 ##  Here is the information on the help books of the package, used for
@@ -151,7 +147,7 @@ PackageDoc := rec(
   # a longer title of the book, this together with the book name should
   # fit on a single text line (appears with the '?books' command in GAP)
   # LongTitle := "Elementary Divisors of Integer Matrices",
-  LongTitle := "NoCK/Computitation obstruction for compact Clifford-Klein forms",
+  LongTitle := "NoCK/Computing obstruction for compact Clifford-Klein forms",
 ),
 
 
