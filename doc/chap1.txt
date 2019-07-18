@@ -1,19 +1,8 @@
   
   [1X1 [33X[0;0YNotation[133X[101X
   
-  [33X[0;0YNotation  for  real Lie algebra is from CoReLG Package, [DFdG14]. Notice: we
-  found some misspellings:[133X
-  
-  [30X    [33X[0;6Y"D",4,5 is [22Xmathfrakso(1,7)[122X[133X
-  
-  [30X    [33X[0;6Y"D",4,4 is [22Xmathfrakso(3,5)[122X[133X
-  
-  [30X    [33X[0;6Y"E",7,3 is [22Xmathfrake_7(-25)=EVII[122X[133X
-  
-  [30X    [33X[0;6Y"E",7,4 is [22Xmathfrake_7(-5)=EVI[122X[133X
-  
-  [33X[0;0YTo  be  sure,  check the rank or the dimension and check the result with the
-  table in [OV90].[133X
+  [33X[0;0YWe  use  the notation and convention for real Lie algebras as is from CoReLG
+  Package, [DFdG14].[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XG:=RealFormById( "E", 7,3);[127X[104X
@@ -35,4 +24,6 @@
     [4X[25Xgap>[125X [27XdimK:= Dimension(K);[127X[104X
     [4X[28X79[128X[104X
   [4X[32X[104X
+  
+  [33X[0;0YClassification can be found in Table 9 in [OV90], p. 312-317.[133X
   

@@ -1,7 +1,7 @@
   
-  [1X2 [33X[0;0YObstruction for compact Clifford-Klein form[133X[101X
+  [1X2 [33X[0;0YObstruction for the existence of compact Clifford-Klein form[133X[101X
   
-  [33X[0;0YIn this chapter we describe functions for algorithms from [BJS+].[133X
+  [33X[0;0YIn this chapter we describe functions for algorithm from [BJS+].[133X
   
   
   [1X2.1 [33X[0;0YTechnical functions[133X[101X
@@ -11,7 +11,8 @@
   [33X[1;0Y[29X[2XNonCompactDimension[102X( [3XG[103X ) [32X function[133X
   
   [33X[0;0YFor  a  real  Lie  algebra  [22XG[122X constructed by the function [3XRealFormById[103X (from
-  [DFdG14]), this function returns the non-compact dimension of [22XG[122X.[133X
+  [DFdG14]),  this  function returns the non-compact dimension of [22XG[122X (dimension
+  of a non-compact part in Cartan decomposition of [22XG[122X).[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XG:=RealFormById("E",6,2); # E6(6)[127X[104X
@@ -24,11 +25,10 @@
   
   [33X[1;0Y[29X[2XPCoefficients[102X( [3Xtype[103X, [3Xrank[103X ) [32X function[133X
   
-  [33X[0;0YLet [22XG[122X be the compact connected Lie group of the type [3Xtype[103X and the rank [3Xrank[103X.
-  Let [22XΛP_G=Λ (y_1,...,y_l)[122X be the exterior algebras over the spaces [22XP_G[122X of the
+  [33X[0;0YLet  [22XG[122X  be a compact connected Lie group of the type [3Xtype[103X and the rank [3Xrank[103X.
+  Let  [22XΛP_G=Λ (y_1,...,y_l)[122X be the exterior algebra over the spaces [22XP_G[122X of the
   primitive    elements   in   [22XH^*(G)[122X.   Denote   the   degrees   as   follows
-  [22X|y_j|=2p_j-1,j=1,...,l[122X.  This  function  returns  coefficients  [22Xp_1,...,p_l,
-  j=1,...,l[122X.[133X
+  [22X|y_j|=2p_j-1,j=1,...,l[122X. This function returns coefficients [22Xp_1,...,p_l[122X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XPCoefficients("D",5);[127X[104X
@@ -52,11 +52,10 @@
   
   [33X[1;0Y[29X[2XAllZeroDH[102X( [3Xtype[103X, [3Xrank[103X, [3Xid[103X ) [32X function[133X
   
-  [33X[0;0YLet [22XG^C[122X be the complex Lie algebra of the type [3Xtype[103X and the rank [3Xrank[103X. Let [22XG[122X
-  be    the    real    form    of    [22XG^C[122X    with    the    index    [3Xid[103X    (see
-  [3XRealFormsInformation[103X,[DFdG14]).  This function returns the set of degrees of
-  [22XP(t)[122X  that  have  zero  coefficients  over all permutation (see Section 7 in
-  [BJS+]).[133X
+  [33X[0;0YLet  [22XG^C[122X  be a complex Lie algebra of the type [3Xtype[103X and the rank [3Xrank[103X. Let [22XG[122X
+  be a real form of [22XG^C[122X with the index [3Xid[103X (see [3XRealFormsInformation[103X,[DFdG14]).
+  This function returns the set of degrees of [22XP(t)[122X that have zero coefficients
+  over all permutation (see Section 7 in [BJS+]).[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XAllZeroDH("F",4,2); [127X[104X

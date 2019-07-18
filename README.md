@@ -5,7 +5,7 @@ NoCK is a GAP4 package.
 REMARK: this package is written for GAP4.8 (and higher versions); the package [SLA](http://www.science.unitn.it/~degraaf/sla.html) & [CoReLG](http://users.monash.edu/~heikod/corelg/) is required.
 
 
-# Instalation
+# Installation
 
 To install the package NoCK move the file `NoCK-XX.tar.gz` (or any other archive containing it) into the `pkg` directory.
 Usually this will be the `pkg` subdirectory in your GAP4 installation. However, it is also possible to have a `pkg` subdirectory in a different place, see the section 'Installing GAP Packages' of the GAP4 reference manual for more information. Then simply unpack `NoCK-XX.tar.gz` and your installation is complete.

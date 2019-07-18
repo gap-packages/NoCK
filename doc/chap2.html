@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>GAP (NoCK) - Chapter 2: Obstruction for compact Clifford-Klein form</title>
+<title>GAP (NoCK) - Chapter 2: Obstruction for the existence of compact Clifford-Klein form</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -15,13 +15,13 @@
 <body class="chap2"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chapBib.html">Bib</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chapBib.html">Bib</a>  <a href="chapInd.html">Ind</a>  </div>
 
-<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib.html">[Next Chapter]</a>&nbsp;  </div>
+<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap3.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap2_mj.html">[MathJax on]</a></p>
-<p><a id="X7B25E9527EFFF475" name="X7B25E9527EFFF475"></a></p>
-<div class="ChapSects"><a href="chap2.html#X7B25E9527EFFF475">2 <span class="Heading">Obstruction for compact Clifford-Klein form</span></a>
+<p><a id="X7DD2840E797415E3" name="X7DD2840E797415E3"></a></p>
+<div class="ChapSects"><a href="chap2.html#X7DD2840E797415E3">2 <span class="Heading">Obstruction for the existence of compact Clifford-Klein form</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X805C42557996F58A">2.1 <span class="Heading">Technical functions</span></a>
 </span>
 <div class="ContSSBlock">
@@ -32,9 +32,9 @@
 </div></div>
 </div>
 
-<h3>2 <span class="Heading">Obstruction for compact Clifford-Klein form</span></h3>
+<h3>2 <span class="Heading">Obstruction for the existence of compact Clifford-Klein form</span></h3>
 
-<p>In this chapter we describe functions for algorithms from <a href="chapBib.html#biBour">[BJS+]</a>.</p>
+<p>In this chapter we describe functions for algorithm from <a href="chapBib.html#biBour">[BJS+]</a>.</p>
 
 <p><a id="X805C42557996F58A" name="X805C42557996F58A"></a></p>
 
@@ -45,7 +45,7 @@
 <h5>2.1-1 NonCompactDimension</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NonCompactDimension</code>( <var class="Arg">G</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For a real Lie algebra <span class="SimpleMath">G</span> constructed by the function <var class="Arg">RealFormById</var> (from <a href="chapBib.html#biBCoReLG">[DFdG14]</a>), this function returns the non-compact dimension of <span class="SimpleMath">G</span>.</p>
+<p>For a real Lie algebra <span class="SimpleMath">G</span> constructed by the function <var class="Arg">RealFormById</var> (from <a href="chapBib.html#biBCoReLG">[DFdG14]</a>), this function returns the non-compact dimension of <span class="SimpleMath">G</span> (dimension of a non-compact part in Cartan decomposition of <span class="SimpleMath">G</span>).</p>
 
 
 <div class="example"><pre>
@@ -60,7 +60,7 @@
 <h5>2.1-2 PCoefficients</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PCoefficients</code>( <var class="Arg">type</var>, <var class="Arg">rank</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Let <span class="SimpleMath">G</span> be the compact connected Lie group of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">ΛP_G=Λ (y_1,...,y_l)</span> be the exterior algebras over the spaces <span class="SimpleMath">P_G</span> of the primitive elements in <span class="SimpleMath">H^*(G)</span>. Denote the degrees as follows <span class="SimpleMath">|y_j|=2p_j-1,j=1,...,l</span>. This function returns coefficients <span class="SimpleMath">p_1,...,p_l, j=1,...,l</span>.</p>
+<p>Let <span class="SimpleMath">G</span> be a compact connected Lie group of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">ΛP_G=Λ (y_1,...,y_l)</span> be the exterior algebra over the spaces <span class="SimpleMath">P_G</span> of the primitive elements in <span class="SimpleMath">H^*(G)</span>. Denote the degrees as follows <span class="SimpleMath">|y_j|=2p_j-1,j=1,...,l</span>. This function returns coefficients <span class="SimpleMath">p_1,...,p_l</span>.</p>
 
 
 <div class="example"><pre>
@@ -86,7 +86,7 @@ t^9+t^5+t^4+1
 <h5>2.1-4 AllZeroDH</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AllZeroDH</code>( <var class="Arg">type</var>, <var class="Arg">rank</var>, <var class="Arg">id</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Let <span class="SimpleMath">G^C</span> be the complex Lie algebra of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">G</span> be the real form of <span class="SimpleMath">G^C</span> with the index <var class="Arg">id</var> (see <var class="Arg">RealFormsInformation</var>,<a href="chapBib.html#biBCoReLG">[DFdG14]</a>). This function returns the set of degrees of <span class="SimpleMath">P(t)</span> that have zero coefficients over all permutation (see Section 7 in <a href="chapBib.html#biBour">[BJS+]</a>).</p>
+<p>Let <span class="SimpleMath">G^C</span> be a complex Lie algebra of the type <var class="Arg">type</var> and the rank <var class="Arg">rank</var>. Let <span class="SimpleMath">G</span> be a real form of <span class="SimpleMath">G^C</span> with the index <var class="Arg">id</var> (see <var class="Arg">RealFormsInformation</var>,<a href="chapBib.html#biBCoReLG">[DFdG14]</a>). This function returns the set of degrees of <span class="SimpleMath">P(t)</span> that have zero coefficients over all permutation (see Section 7 in <a href="chapBib.html#biBour">[BJS+]</a>).</p>
 
 
 <div class="example"><pre>
@@ -95,10 +95,10 @@ t^9+t^5+t^4+1
 </pre></div>
 
 
-<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib.html">[Next Chapter]</a>&nbsp;  </div>
+<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap3.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chapBib.html">Bib</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chapBib.html">Bib</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
