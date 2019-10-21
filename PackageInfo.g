@@ -183,19 +183,7 @@ Dependencies := rec(
                       
 ),
 
-#AvailabilityTest := ReturnTrue,
-AvailabilityTest := function()
-  local path, file;
-    # test for existence of the compiled binary
-    path:= DirectoriesPackagePrograms( "nock" );
-    file:= Filename( path, "hello" );
-    if file = fail then
-      LogPackageLoadingMessage( PACKAGE_WARNING,
-          [ "The program `hello' is not compiled,",
-            "`HelloWorld()' is thus unavailable." ] );
-    fi;
-    return true;
-  end,
+AvailabilityTest := ReturnTrue,
 
 BannerString := Concatenation( 
     "----------------------------------------------------------------\n",
