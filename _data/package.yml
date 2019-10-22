@@ -47,7 +47,7 @@ packageinfo: https://pjastr.github.io/NoCK/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/pjastr/NoCK/releases/download/v1.4/NoCK-1.4.tar.gz.
+      url: https://github.com/pjastr/NoCK/releases/download/v1.4/NoCK-1.4.tar.gz
 
 abstract: |
     The <span class="pkgname">NoCK</span> package    is used for computitation Tolzanos's obstruction    for compact Clifford-Klein forms
