@@ -12,8 +12,8 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "NoCK-Package for computing obstruction for compact Clifford-Klein forms.",
-Version := "1.4",
-Date := "22/10/2019",
+Version := "1.3",
+Date := "18/07/2019",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",
@@ -26,9 +26,8 @@ SourceRepository := rec(
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 SupportEmail := "piojas@matman.uwm.edu.pl",
 
-ArchiveURL      := Concatenation( ~.SourceRepository.URL,
-                                 "/releases/download/v", ~.Version,
-                                 "/", ~.PackageName, "-", ~.Version ),
+ArchiveURL := Concatenation( ~.SourceRepository.URL,
+                                 "/archive/v", ~.Version ),
 
 ArchiveFormats := ".tar.gz",
 
