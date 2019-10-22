@@ -12,8 +12,8 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "NoCK-Package for computing obstruction for compact Clifford-Klein forms.",
-Version := "1.3",
-Date := "18/07/2019",
+Version := "1.4",
+Date := "22/10/2019",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",
@@ -26,8 +26,9 @@ SourceRepository := rec(
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 SupportEmail := "piojas@matman.uwm.edu.pl",
 
-ArchiveURL := Concatenation( ~.SourceRepository.URL,
-                                 "/archive/v", ~.Version ),
+ArchiveURL      := Concatenation( ~.SourceRepository.URL,
+                                 "/releases/download/v", ~.Version,
+                                 "/", ~.PackageName, "-", ~.Version ),
 
 ArchiveFormats := ".tar.gz",
 
@@ -183,19 +184,7 @@ Dependencies := rec(
                       
 ),
 
-#AvailabilityTest := ReturnTrue,
-AvailabilityTest := function()
-  local path, file;
-    # test for existence of the compiled binary
-    path:= DirectoriesPackagePrograms( "nock" );
-    file:= Filename( path, "hello" );
-    if file = fail then
-      LogPackageLoadingMessage( PACKAGE_WARNING,
-          [ "The program `hello' is not compiled,",
-            "`HelloWorld()' is thus unavailable." ] );
-    fi;
-    return true;
-  end,
+AvailabilityTest := ReturnTrue,
 
 BannerString := Concatenation( 
     "----------------------------------------------------------------\n",

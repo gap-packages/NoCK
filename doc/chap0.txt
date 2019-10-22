@@ -6,10 +6,10 @@
      [1XComputing obstruction for the existence of compact Clifford-Klein form[101X
   
   
-                                  Version 1.3
+                                  Version 1.4
   
   
-                                   July 2019
+                                  October 2019
   
   
                                 Maciej Bocheński
