@@ -14,6 +14,7 @@ PackageName := "NoCK",
 Subtitle := "NoCK-Package for computing obstruction for compact Clifford-Klein forms.",
 Version := "1.4",
 Date := "22/10/2019",
+License := "GPL-2.0-or-later",
 
 PackageWWWHome :=
    "https://pjastr.github.io/NoCK",
