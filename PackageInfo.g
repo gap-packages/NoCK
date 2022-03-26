@@ -11,7 +11,7 @@ SetPackageInfo( rec(
 
 
 PackageName := "NoCK",
-Subtitle := "NoCK-Package for computing obstruction for compact Clifford-Klein forms.",
+Subtitle := "Computing obstruction for the existence of compact Clifford-Klein form",
 Version := "1.4",
 Date := "22/10/2019",
 
@@ -147,8 +147,7 @@ PackageDoc := rec(
   SixFile   := "doc/manual.six",
   # a longer title of the book, this together with the book name should
   # fit on a single text line (appears with the '?books' command in GAP)
-  # LongTitle := "Elementary Divisors of Integer Matrices",
-  LongTitle := "NoCK/Computing obstruction for compact Clifford-Klein forms",
+  LongTitle := "Computing obstruction for the existence of compact Clifford-Klein form",
 ),
 
 
@@ -198,7 +197,28 @@ BannerString := Concatenation(
 
 TestFile := "tst/testall.g",
 
-Keywords := ["real lie algebras", "clifford-klein forms"]
+Keywords := ["real lie algebras", "clifford-klein forms"],
+
+AutoDoc := rec(
+    TitlePage := rec(
+        Abstract := """
+        In this package we develop functions for an algorithm designed
+        to find homogeneous spaces of semisimple non-compact Lie groups
+        which do not admit compact Clifford-Klein forms.
+        """,
+
+        Acknowledgements := """
+        We thank Willem de Graaf for his help in getting some literature sources.
+        """,
+
+        Copyright := """
+        NoCK Package is free software;  you can redistribute it and/or modify it under the terms of the
+        <URL Text="GNU General Public License">https://www.fsf.org/licenses/gpl.html</URL>
+        as published by the Free Software Foundation; either version 2 of the License,
+        or (at your option) any later version.
+        """,
+    ),
+),
 
 ));
 

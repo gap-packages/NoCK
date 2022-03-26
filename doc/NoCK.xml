@@ -4,75 +4,7 @@
 
 <Book Name="NoCK">
 
-<TitlePage>
-  <Title>NoCK</Title>
-  <Subtitle>Computing obstruction for the existence of compact Clifford-Klein form</Subtitle>
-  <Version>Version 1.4</Version>
-
-<Author>
-  Maciej Bocheński
-  <Email>mabo@matman.uwm.edu.pl</Email>
-<Address>
- Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
- Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
-       </Address> 
-  </Author>
-<Author>
-  Piotr Jastrzębski
-  <Email>piojas@matman.uwm.edu.pl</Email>
-  <Homepage>http://wmii.uwm.edu.pl/~piojas/</Homepage>
-<Address>
- Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
- Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
-       </Address> 
-  </Author>
-  <Author>
-  Anna Szczepkowska
-  <Email>anna.szczepkowska@matman.uwm.edu.pl</Email>
-<Address>
- Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
- Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
-       </Address> 
-  </Author>
-  <Author>
-  Aleksy Tralle
-  <Email>tralle@matman.uwm.edu.pl</Email>
-  <Homepage>http://wmii.uwm.edu.pl/~tralle/</Homepage>
-<Address>
- Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
- Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
-       </Address> 
-  </Author>
-  <Author>
-  Artur Woike
-  <Email>awoike@matman.uwm.edu.pl</Email>
-  <Homepage>http://wmii.uwm.edu.pl/~awoike/</Homepage>
-<Address>
- Faculty of Mathematics and Computer Science,<Br/> University of Warmia and Mazury in Olsztyn<Br/>
- Sloneczna 54 Street, <Br/> 10-710 Olsztyn, Poland
-       </Address> 
-  </Author>
-
-  <Date>October 2019
-</Date>
-
-<Abstract>
-In this package we develop functions for an algorithm designed to find homogeneous spaces of semisimple non-compact Lie groups which do not admit compact Clifford-Klein forms. 
-</Abstract>
-
-<Acknowledgements>
-We thank Willem de Graaf for his help in getting some literature sources.
-</Acknowledgements>
-
-<Copyright>
-NoCK Package is free software;  you can redistribute it and/or modify it under the terms of the 
-    <URL Text="GNU General Public License">http://www.fsf.org/licenses/gpl.html</URL> 
-    as published by the Free Software Foundation; either version 2 of the License, 
-    or (at your option) any later version.
-</Copyright>
-  
-
-</TitlePage>
+<#Include SYSTEM "title.xml">
 
 <TableOfContents/>
 
