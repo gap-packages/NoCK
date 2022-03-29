@@ -17,12 +17,12 @@ Date := "22/10/2019",
 License := "GPL-2.0-or-later",
 
 PackageWWWHome :=
-   "https://pjastr.github.io/NoCK",
+   "https://gap-packages.github.io/NoCK",
 
 
 SourceRepository := rec(
     Type := "git",
-    URL :=  "https://github.com/pjastr/NoCK",
+    URL :=  "https://github.com/gap-packages/NoCK",
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 SupportEmail := "piojas@matman.uwm.edu.pl",

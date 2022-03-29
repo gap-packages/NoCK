@@ -19,11 +19,11 @@ For details on how to use the NoCK package see the package documentation in the 
 
 # Documentation
 
-The manual of NoCK is contained in /pkg/NoCK-XX/doc. An online version can be found [here](https://pjastr.github.io/NoCK/doc/chap0.html).
+The manual of NoCK is contained in /pkg/NoCK-XX/doc. An online version can be found [here](https://gap-packages.github.io/NoCK/doc/chap0.html).
 
 # Package using for documentation/preperation
 
-* [GapDOC](http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc/index.html)
-* [GAP Example Package](http://gap-packages.github.io/example/)
+* [GAPDoc](http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc/index.html)
+* [GAP Example Package](https://gap-packages.github.io/example/)
 * [GitHubPagesForGAP](https://github.com/gap-system/GitHubPagesForGAP)
 
