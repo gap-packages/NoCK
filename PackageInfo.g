@@ -12,8 +12,8 @@ SetPackageInfo( rec(
 
 PackageName := "NoCK",
 Subtitle := "Computing obstruction for the existence of compact Clifford-Klein form",
-Version := "1.4",
-Date := "22/10/2019",
+Version := "1.5",
+Date := "30/03/2022",
 License := "GPL-2.0-or-later",
 
 PackageWWWHome :=
