@@ -1,15 +1,15 @@
   
   
-                                      [1XNoCK[101X
+                                     [1X NoCK [101X
   
   
-     [1XComputing obstruction for the existence of compact Clifford-Klein form[101X
+    [1X Computing obstruction for the existence of compact Clifford-Klein form [101X
   
   
-                                  Version 1.4
+                                      1.5
   
   
-                                  October 2019
+                                 30 March 2022
   
   
                                 Maciej Bocheński
@@ -26,47 +26,17 @@
   
   Maciej Bocheński
       Email:    [7Xmailto:mabo@matman.uwm.edu.pl[107X
-      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
-                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
-                [33X[0;14YSloneczna 54 Street,[133X
-                [33X[0;14Y10-710 Olsztyn, Poland[133X
-  
-  
   Piotr Jastrzębski
       Email:    [7Xmailto:piojas@matman.uwm.edu.pl[107X
       Homepage: [7Xhttp://wmii.uwm.edu.pl/~piojas/[107X
-      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
-                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
-                [33X[0;14YSloneczna 54 Street,[133X
-                [33X[0;14Y10-710 Olsztyn, Poland[133X
-  
-  
   Anna Szczepkowska
       Email:    [7Xmailto:anna.szczepkowska@matman.uwm.edu.pl[107X
-      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
-                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
-                [33X[0;14YSloneczna 54 Street,[133X
-                [33X[0;14Y10-710 Olsztyn, Poland[133X
-  
-  
   Aleksy Tralle
       Email:    [7Xmailto:tralle@matman.uwm.edu.pl[107X
       Homepage: [7Xhttp://wmii.uwm.edu.pl/~tralle/[107X
-      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
-                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
-                [33X[0;14YSloneczna 54 Street,[133X
-                [33X[0;14Y10-710 Olsztyn, Poland[133X
-  
-  
   Artur Woike
       Email:    [7Xmailto:awoike@matman.uwm.edu.pl[107X
-      Homepage: [7Xhttp://wmii.uwm.edu.pl/~awoike/[107X
-      Address:  [33X[0;14YFaculty of Mathematics and Computer Science,[133X
-                [33X[0;14YUniversity of Warmia and Mazury in Olsztyn[133X
-                [33X[0;14YSloneczna 54 Street,[133X
-                [33X[0;14Y10-710 Olsztyn, Poland[133X
-  
-  
+      Homepage: [7Xhttp://wmii.uwm.edu.pl/~awoike[107X
   
   -------------------------------------------------------
   [1XAbstract[101X
@@ -79,7 +49,7 @@
   [1XCopyright[101X
   [33X[0;0YNoCK  Package  is  free  software;  you can redistribute it and/or modify it
   under     the     terms     of    the    GNU    General    Public    License
-  ([7Xhttp://www.fsf.org/licenses/gpl.html[107X)  as  published  by  the Free Software
+  ([7Xhttps://www.fsf.org/licenses/gpl.html[107X)  as  published  by the Free Software
   Foundation;  either  version 2 of the License, or (at your option) any later
   version.[133X
   

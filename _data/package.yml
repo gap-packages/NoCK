@@ -1,8 +1,8 @@
 name: NoCK
-version: 1.4
-date: 2019-10-22
+version: 1.5
+date: 2022-03-30
 description: |
-    NoCK-Package for computing obstruction for the existence of compact Clifford-Klein form.
+    Computing obstruction for the existence of compact Clifford-Klein form
 
 authors:
     - name: Maciej Bocheński
@@ -27,31 +27,35 @@ maintainers:
       url: http://wmii.uwm.edu.pl/~tralle/
     - name: Artur Woike
       url: http://wmii.uwm.edu.pl/~awoike
+    - name: The GAP Team
+      url: mailto:support@gap-system.org
 
 GAP: ">=4.8"
 
 needed-pkgs:
     - name: "sla"
       version: ">=1.2"
+      url: "https://gap-packages.github.io/sla/"
     - name: "CoReLG"
       version: ">=1.20"
+      url: "https://gap-packages.github.io/corelg/"
 
 suggested-pkgs:
     - name: "GAPDoc"
       version: "1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
 
-www: https://pjastr.github.io/NoCK
+www: https://gap-packages.github.io/NoCK
 readme: README.md
-packageinfo: https://pjastr.github.io/NoCK/PackageInfo.g
+packageinfo: https://gap-packages.github.io/NoCK/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/pjastr/NoCK/releases/download/v1.4/NoCK-1.4.tar.gz
+      url: https://github.com/gap-packages/NoCK/releases/download/v1.5/NoCK-1.5.tar.gz
 
 abstract: |
-    The <span class="pkgname">NoCK</span> package    is used for computitation Tolzanos's obstruction    for compact Clifford-Klein forms
+    The <span class="pkgname">NoCK</span> package    is used for computing Tolzanos's obstruction    for compact Clifford-Klein forms
 
-status: submitted
+status: accepted
 doc-html: doc/chap0.html
 doc-pdf: doc/manual.pdf
