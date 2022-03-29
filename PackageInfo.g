@@ -83,7 +83,14 @@ Persons := [
     Institution   := "Faculty of Mathematics and Computer Science, University of Warmia and Mazury in Olsztyn"
   ),
 
-  
+  rec(
+    LastName      := "GAP Team",
+    FirstNames    := "The",
+    IsAuthor      := false,
+    IsMaintainer  := true,
+    Email         := "support@gap-system.org",
+  ),
+
 ],
 
 ##  Status information. Currently the following cases are recognized:
