@@ -1,5 +1,6 @@
 name: NoCK
-version: 1.5
+version: "1.5"
+license: "GPL-2.0-or-later"
 date: 2022-03-30
 description: |
     Computing obstruction for the existence of compact Clifford-Klein form
@@ -59,3 +60,33 @@ abstract: |
 status: accepted
 doc-html: doc/chap0.html
 doc-pdf: doc/manual.pdf
+keywords: |
+    real lie algebras, clifford-klein forms.
+citeas: |
+    <p class='BibEntry'>
+    [<span class='BibKey'>BJSTWT22</span>]   <b class='BibAuthor'>Bocheński, M., Jastrzębski, P., Szczepkowska, A., Tralle, A., Woike, A. and GAP Team, T.</b>,
+     <i class='BibTitle'>NoCK, Computing obstruction for the existence of compact Clifford-Klein form,
+             Version 1.5</i>
+     (<span class='BibYear'>2022</span>)<br />
+    (<span class='BibNote'>Refereed GAP package</span>),
+    <span class='BibHowpublished'><a href="https://gap-packages.github.io/NoCK">https://gap-packages.github.io/NoCK</a></span>.
+    </p>
+    
+
+bibtex: |
+    @misc{ NoCK1.5,
+      author =           {Boche{\a'n}ski,   M.  and  Jastrz{\k  e}bski,  P.  and
+                          Szczepkowska,  A. and Tralle, A. and Woike, A. and GAP
+                          Team, T.},
+      title =            {{NoCK},  Computing  obstruction  for  the existence of
+                          compact Clifford-Klein form, {V}ersion 1.5},
+      month =            {Mar},
+      year =             {2022},
+      note =             {Refereed GAP package},
+      howpublished =     {\href            {https://gap-packages.github.io/NoCK}
+                          {\texttt{https://gap-packages.github.io/}\discretionary
+                          {}{}{}\texttt{NoCK}}},
+      keywords =         {real lie algebras; clifford-klein forms},
+      printedkey =       {BJSTWT22}
+    }
+
